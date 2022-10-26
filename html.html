@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Fonegra</title>
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"></head>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class="nav_titulo">Recomendacion Musica y Peliculas</h2>
+            </div>
+
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="#" id="en_inicio" class="nav_links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" id="en_acerca" class="nav_links">Acerca de</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" id="en_gen" class="nav_links">Generos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" id="en_plan" class="nav_links">Planes</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" id="en_cont" class="nav_links">Contacto</a>
+                </li>
+
+                <img src="./imagenes/close.svg"  class="nav_close">
+            </ul>
+
+            <div class="nav_menu">
+                <img src="./imagenes/open.svg" class="nav_img">
+            </div>
+
+        </nav>
+
+        <section class="hero_container container">
+            <h1 class="hero_titulo">Encuentra las Mejores recomendaciones de musica y peliculas.</h1>
+            <p class="hero_paragraph">Si estas aburrido de escuchar la misma musica o ver las mismas peliculas de
+                siempre aqui te recomendaremos las mejores canciones y mejores peliculas para que cambies esa monotonia
+            </p>
+            <a href="#" class="cta">Descubre Ya!</a>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="Subtitulo">¿Que tipo de contenido encontraras?</h2>
+            <p class="about_paragraph">Encontras todo tipo de genero musical y cinematografico.</p>
+
+            <div class="about_main">
+                <article class="about_iconos">
+                    <img src="./imagenes/dezer.svg" class="about_icono">
+                    <H3 class="about_titulo">Audio</H3>
+                    <p class="about_paragraph">Siempre encontraras la mejor musica de moda.</p>
+                </article>
+
+                <article class="about_iconos">
+                    <img src="./imagenes/video.svg" class="about_icono">
+                    <H3 class="about_titulo">Visual</H3>
+                    <p class="about_paragraph">Encontraras las mejores peliculas de todos los tiempos con grandes
+                        Referentes.</p>
+                </article>
+
+                <article class="about_iconos">
+                    <img src="./imagenes/dislai.svg" class="about_icono">
+                    <H3 class="about_titulo">Calificaciones</H3>
+                    <p class="about_paragraph">Todo nuestro contenido esta calificado de mejor a peor.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge_container container">
+                <div class="knowledge_textos">
+                    <h2 class="subtitulo">Todo el mejor contenido para el mejor cliente ¡Comenzemos Ya!</h2>
+                    <p class="knowledge_paragraph">Empieza a descubir un mundo con posibilidades infinitas que no
+                        conocias, adentrate a explorar nuevos caminos.</p>
+                    <a href="#" class="cta">Adentrate</a>
+                </div>
+
+                <figure class="knowledge_pintura">
+                    <img src="./imagenes/pelis.jpg" alt="" class="knowledge_imagen">
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="cuadro">
+            <h2 class="subtitulo">Aqui recomendaciones</h2>
+            <div class="botones_work">
+                <ul>
+                    <li class="filter active" data-nombre="todos">Todo</li>
+                    <li class="filter" data-nombre="musica">Generos Musicales</li>
+                    <li class="filter" data-nombre="pelis">Generos Cinematograficos</li>
+                </ul>
+            </div>
+            <div class="galeria_work">
+                <div class="cont_work musica">
+                    <div class="img_work">
+                        <img src="./imagenes/gen_m1.png" alt="">
+                    </div>
+                    <div class="textos_work">
+                        <h4>Genero Metal</h4>
+                    </div>
+                </div>
+                <div class="cont_work musica">
+                    <div class="img_work">
+                        <img src="./imagenes/gen_m2.jpg" alt="">
+                    </div>
+                    <div class="textos_work">
+                        <h4>Genero Urbano</h4>
+                    </div>
+                </div>
+                <div class="cont_work musica">
+                    <div class="img_work">
+                        <img src="./imagenes/gen_m3.jpg" alt="">
+                    </div>
+                    <div class="textos_work">
+                        <h4>Genero Clasico</h4>
+                    </div>
+                </div>
+                <div class="cont_work pelis">
+                    <div class="img_work">
+                        <img src="./imagenes/gen_p1.jpg" alt="">
+                    </div>
+                    <div class="textos_work">
+                        <h4>De Terror</h4>
+                    </div>
+                </div>
+                <div class="cont_work pelis">
+                    <div class="img_work">
+                        <img src="./imagenes/gen_p2.jpg" alt="">
+                    </div>
+                    <div class="textos_work">
+                        <h4>De Accion</h4>
+                    </div>
+                </div>
+                <div class="cont_work pelis">
+                    <div class="img_work">
+                        <img src="./imagenes/gen_p3.jpg" alt="">
+                    </div>
+                    <div class="textos_work">
+                        <h4>De Drama</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="precios contendor">
+            <h2 class="subtitulo">Obten el plan para descubrir</h2>
+
+            <div class="precio_tabla">
+                <div class="precio_elemento">
+                    <p class="precio_nombre">Musical</p>
+                    <h3 class="precio_precio">$10/Mes</h3>
+
+                    <div class="precio_items">
+                        <p class="precio_feat">Todo el contenido Musical</p>
+                        <p class="precio_feat">Solo 3 exp/imp por mes</p>
+                        <p class="precio_feat">
+                            <Prox class="">Prox...</Prox>
+                        </p>
+                    </div>
+
+                    <a href="#" class="precio_cta">Empieza ahora</a>
+                </div>
+
+                <div class="precio_elemento precio_elemento--plus">
+                    <p class="precio_nombre">Todos los Servicios</p>
+                    <h3 class="precio_precio">$20/Mes</h3>
+
+                    <div class="precio_items">
+                        <p class="precio_feat">Todo el contenido musical</p>
+                        <p class="precio_feat">Todo el contenido visual</p>
+                        <p class="precio_feat">Accesibilidad a exp/imp contenido ilimitadas veces</p>
+                    </div>
+
+                    <a href="#" class="precio_cta">Empieza ahora</a>
+                </div>
+
+                <div class="precio_elemento">
+                    <p class="precio_nombre">Cinematografico</p>
+                    <h3 class="precio_precio">$10/Mes</h3>
+
+                    <div class="precio_items">
+                        <p class="precio_feat">Todo el contenido cinematografico</p>
+                        <p class="precio_feat">Solo 3 exp/imp por mes</p>
+                        <p class="precio_feat">Prox...</p>
+                    </div>
+
+                    <a href="#" class="precio_cta">Empieza ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonios">
+            <div class="testimonio_container container">
+                <img src="./imagenes/arrowleft.svg" alt="" class="testimonio_arrow" id="before">
+                <section class="testimonio_body testimonio_body--show" data-id="1">
+                    <div class="testimonio_textos">
+                        <h2 class="subtitulo">Mi nombre es Simon Fonegra, <span class="testimonio_curs">Cliente del
+                                servicio</span></h2>
+                        <p class="testimonio_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                            suscipit quibusdam numquam magnam explicabo. Non molestias reiciendis optio fuga soluta
+                            expedita est? Sequi cumque vitae aperiam itaque nobis ratione excepturi!</p>
+                    </div>
+
+                    <figure class="testimonio_pintura">
+                        <img src="./imagenes/img1.jpg" alt="" class="testimonio_img">
+                    </figure>
+                </section>
+
+                <section class="testimonio_body" data-id="2">
+                    <div class="testimonio_textos">
+                        <h2 class="subtitulo">Mi nombre es Juanito Alcachofa, <span class="testimonio_curs">Cliente del
+                                servicio</span></h2>
+                        <p class="testimonio_review">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <figure class="testimonio_pintura">
+                        <img src="./imagenes/img2.jpg" alt="" class="testimonio_img">
+                    </figure>
+                </section>
+
+                <section class="testimonio_body" data-id="3">
+                    <div class="testimonio_textos">
+                        <h2 class="subtitulo">Mi nombre es Valentina Jimenez, <span class="testimonio_curs">Cliente del
+                                servicio</span></h2>
+                        <p class="testimonio_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                            suscipit quibusdam numquam magnam explicabo. Sequi cumque vitae aperiam itaque nobis ratione
+                            excepturi!</p>
+                    </div>
+
+                    <figure class="testimonio_pintura">
+                        <img src="./imagenes/img3.jpg" alt="" class="testimonio_img">
+                    </figure>
+                </section>
+                <img src="./imagenes/arrowright.svg" alt="" class="testimonio_arrow" id="next">
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <section class="footer_container container">
+                <nav class="nav nav--footer">
+                    <h2 class="footer_titulo">Recomendacion Musica y Peliculas.</h2>
+
+                    <ul class="nav_link nav_link--foter">
+                        <li class="nav_items">
+                            <a href="#" class="nav_links">Inicio</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="#" class="nav_links">Acerca de</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="#" class="nav_links">Generos</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="#" class="nav_links">Planes</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="#" class="nav_links">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="footer_form" action="https://formspree.io/f/mgeqnoyj" method="POST">
+                    <h2 class="footer_newsle">Registrate ya!</h2>
+                    <div class="footer_inputs">
+                        <input type="email" placeholder="Email:" class="footer_input" name="email">
+                        <input type="submit" value="Registrate" class="footer_submit">
+                    </div>
+                </form>
+            </section>
+
+            <section class="footer_copy container">
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/juanandres.guzman.52" class="footer_icons"><img src="./imagenes/facebu.svg" class="footer_img"></a>
+                    <a href="https://discord.com/login" class="footer_icons"><img src="./imagenes/ds.svg" class="footer_img"></a>
+                </div>
+
+                <h3 class="footer_copyright">Derechos reservados &copy; Simon Fonegra</h3>
+            </section>
+
+        </footer>
+
+    </main>
+    <script src="./js/filtro.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
+
+
+</body>
+
+</html>
